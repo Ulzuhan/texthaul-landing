@@ -1,48 +1,45 @@
 # TextHaul Landing Page
 
-Public landing page and privacy policy for [TextHaul](https://github.com/YOUR_USERNAME/text-haul) — a Chrome Extension that captures screenshots and extracts text with OCR.
+Public marketing page and privacy policy for TextHaul.
 
 ## Live Site
 
-Hosted on **GitHub Pages** at `https://<username>.github.io/texthaul-landing/`
+Hosted on GitHub Pages at:
+
+`https://ulzuhan.github.io/texthaul-landing/`
 
 ## Files
 
 | File | Purpose |
-|------|---------|
-| `index.html` | Main landing page (hero, features, how-it-works, privacy, FAQ, CTA) |
-| `privacy.html` | Privacy policy (required for Chrome Web Store) |
-| `.nojekyll` | Disables Jekyll processing for clean static serving |
-| `CNAME` | Custom domain configuration (optional) |
+| --- | --- |
+| `index.html` | Product landing page |
+| `privacy.html` | Public privacy policy for Chrome Web Store use |
+| `styles.css` | Shared site styles |
+| `site.js` | Theme toggle and current year |
+| `assets/screenshots/` | Real extension screenshots used by the landing page |
 
-## Tech
+## Current launch posture
 
-- **Tailwind CSS** via CDN — zero build step
-- **Vanilla HTML/JS** — no frameworks, fast loading
-- **Dark mode** — auto-detects system preference + manual toggle
-- **Responsive** — mobile, tablet, desktop
+- The page describes the current MVP only: visible-page capture, area capture, local OCR, review/edit flow, dashboard search, and structured retry tools.
+- The page intentionally avoids unavailable install links until the Chrome Web Store listing is live.
+- Once the listing is public, replace the launch-status CTA with the real store URL.
 
-## Setup
+## Screenshot assets
 
-1. Push this repo to GitHub (can be **public** or **private** — GitHub Pages works with both)
-2. Go to **Settings → Pages**
-3. Source: **Deploy from a branch** → `main` → `/ (root)` folder
-4. Site goes live
+Canonical screenshot names:
 
-## Custom Domain (Optional)
+- `popup.png`
+- `recovery-tools.png`
+- `area-selection.png`
+- `dashboard.png`
+- `dashboard-detail.png`
+- `review-editor.png`
+- `settings.png`
 
-1. Buy a domain (e.g., `texthaul.app`)
-2. Uncomment the domain in `CNAME`
-3. Add DNS records pointing to GitHub Pages
-4. Enable HTTPS in repository settings
-
-## Post-Publication Checklist
-
-- [ ] Replace `#` CTA links in `index.html` with your actual Chrome Web Store URL
-- [ ] Update GitHub repository link in footer
-- [ ] Add real screenshots to replace the CSS mockup
-- [ ] Set up custom domain (optional)
+The site serves the compressed `.webp` copies for performance and keeps the `.png` originals for future reuse.
 
 ## License
 
-MIT License — feel free to use this landing page template for your own projects.
+Copyright 2026 TextHaul. All rights reserved.
+
+This landing page is proprietary project material.

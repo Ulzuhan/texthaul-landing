@@ -3,183 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — TextHaul</title>
-  <meta name="description" content="TextHaul Privacy Policy. Your data stays on your device. No tracking, no analytics, no external servers.">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            primary: { 50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 300: '#93c5fd', 400: '#60a5fa', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 800: '#1e40af', 900: '#1e3a8a' }
-          }
-        }
-      }
-    }
-  </script>
+  <meta name="theme-color" content="#0f1527">
+  <meta name="description" content="TextHaul privacy policy: captures, OCR text, and settings stay local in your browser.">
+  <title>Privacy Policy &mdash; TextHaul</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 antialiased">
-
-  <!-- Nav -->
-  <nav class="sticky top-0 z-50 bg-white/80 dark:bg-gray-950/80 backdrop-blur border-b border-gray-200 dark:border-gray-800">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
-        <a href="index.html" class="flex items-center gap-2">
-          <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
-            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
-          </div>
-          <span class="font-bold text-lg tracking-tight">TextHaul</span>
-        </a>
-        <div class="flex items-center gap-3">
-          <button id="theme-toggle" class="p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition" aria-label="Toggle theme">
-            <svg id="sun-icon" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-            <svg id="moon-icon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
-          </button>
-          <a href="index.html#install" class="inline-flex items-center px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white text-sm font-semibold rounded-lg transition shadow-sm">
-            Get the Extension
-          </a>
-        </div>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell nav">
+      <a class="brand" href="index.html" aria-label="TextHaul home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 9h8M8 12h8M8 15h5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/></svg></span>
+        <span translate="no">TextHaul</span>
+      </a>
+      <div class="header-actions">
+        <button class="icon-button" type="button" data-theme-toggle aria-label="Switch theme"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v3M12 19v3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M2 12h3M19 12h3M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/></svg></button>
       </div>
     </div>
-  </nav>
+  </header>
 
-  <!-- Content -->
-  <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-    <div class="mb-10">
-      <h1 class="text-3xl sm:text-4xl font-bold mb-4">Privacy Policy</h1>
-      <p class="text-gray-600 dark:text-gray-400">Last updated: <time datetime="2026-05-14">May 14, 2026</time></p>
+  <main id="main" class="policy-main">
+    <p class="eyebrow">Privacy Policy</p>
+    <h1>TextHaul keeps your capture data local.</h1>
+    <p>Last updated: <time datetime="2026-05-16">May 16, 2026</time></p>
+
+    <div class="notice">
+      <strong>Short version:</strong>
+      <p>TextHaul does not collect, transmit, or store your screenshots or extracted text on external servers. OCR runs locally in your browser, and your capture library stays on your device.</p>
     </div>
 
-    <div class="prose dark:prose-invert max-w-none">
-      <div class="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl p-5 mb-8">
-        <div class="flex items-start gap-3">
-          <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-          <div>
-            <strong class="text-green-800 dark:text-green-200">TL;DR</strong>
-            <p class="text-green-700 dark:text-green-300 text-sm mt-1">TextHaul does not collect, transmit, or store any of your data on external servers. All processing happens locally in your browser. We have no access to your screenshots, extracted text, or browsing history.</p>
-          </div>
-        </div>
-      </div>
+    <h2>1. Data stored locally</h2>
+    <p>TextHaul stores the following information locally in your browser so the extension can work:</p>
+    <ul>
+      <li>Captured screenshots and thumbnail previews</li>
+      <li>Extracted OCR text, optional edited text, and OCR confidence metadata</li>
+      <li>Page title, source URL, tags, favorites, and review status</li>
+      <li>Extension settings such as OCR language, interface language, retention, theme, and copy preferences</li>
+    </ul>
+    <p>Captures are stored in IndexedDB. Settings are stored locally in extension storage. You can delete captures from the extension and uninstalling TextHaul removes its locally stored data from the browser.</p>
 
-      <h2 class="text-xl font-bold mt-8 mb-3">1. Information We Do Not Collect</h2>
-      <p class="text-gray-600 dark:text-gray-400 mb-4">TextHaul is designed to be completely private. We do not collect or have access to:</p>
-      <ul class="list-disc pl-5 space-y-2 text-gray-600 dark:text-gray-400 mb-6">
-        <li>Screenshots or images you capture</li>
-        <li>Text extracted via OCR</li>
-        <li>Web pages you visit or their URLs</li>
-        <li>Your browsing history</li>
-        <li>Personal identifiers or contact information</li>
-        <li>Usage analytics or telemetry data</li>
-        <li>Cookies or tracking data</li>
-      </ul>
+    <h2>2. Data we do not collect</h2>
+    <ul>
+      <li>No browsing history collection</li>
+      <li>No analytics, telemetry, tracking pixels, or advertising cookies</li>
+      <li>No remote OCR uploads</li>
+      <li>No sale or transfer of capture data to third parties</li>
+    </ul>
 
-      <h2 class="text-xl font-bold mt-8 mb-3">2. Local Data Storage</h2>
-      <p class="text-gray-600 dark:text-gray-400 mb-4">All data created by TextHaul is stored locally on your device using your browser's IndexedDB storage. This includes:</p>
-      <ul class="list-disc pl-5 space-y-2 text-gray-600 dark:text-gray-400 mb-6">
-        <li>Captured screenshots (as compressed images)</li>
-        <li>Thumbnail previews</li>
-        <li>Extracted OCR text</li>
-        <li>Tags and metadata you assign to captures</li>
-        <li>Extension settings (language preference, theme, etc.)</li>
-      </ul>
-      <p class="text-gray-600 dark:text-gray-400 mb-6">This data never leaves your device and is not accessible to us or any third party. You can delete all stored data at any time through the extension's Settings page or by uninstalling the extension.</p>
+    <h2>3. OCR processing</h2>
+    <p>OCR runs inside the browser using locally bundled Tesseract assets. Screenshots are not sent to an external OCR API, and the extension does not load executable code from remote servers at runtime.</p>
 
-      <h2 class="text-xl font-bold mt-8 mb-3">3. OCR Processing</h2>
-      <p class="text-gray-600 dark:text-gray-400 mb-4">Optical Character Recognition (OCR) is performed entirely within your browser using the open-source Tesseract.js library. Key points:</p>
-      <ul class="list-disc pl-5 space-y-2 text-gray-600 dark:text-gray-400 mb-6">
-        <li>All OCR language models are bundled locally with the extension</li>
-        <li>Processing occurs in a Web Worker within your browser</li>
-        <li>No image data is transmitted to external servers for OCR</li>
-        <li>No code is loaded from remote servers</li>
-      </ul>
-
-      <h2 class="text-xl font-bold mt-8 mb-3">4. Permissions</h2>
-      <p class="text-gray-600 dark:text-gray-400 mb-4">TextHaul requests the following Chrome permissions, each used solely for the stated purpose:</p>
-      <div class="overflow-x-auto mb-6">
-        <table class="w-full text-sm text-left border border-gray-200 dark:border-gray-700 rounded-lg">
-          <thead class="bg-gray-50 dark:bg-gray-800">
-            <tr>
-              <th class="px-4 py-3 font-semibold">Permission</th>
-              <th class="px-4 py-3 font-semibold">Purpose</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-gray-200 dark:divide-gray-700 text-gray-600 dark:text-gray-400">
-            <tr><td class="px-4 py-3 font-mono text-xs">activeTab</td><td class="px-4 py-3">Capture the currently visible tab</td></tr>
-            <tr><td class="px-4 py-3 font-mono text-xs">storage</td><td class="px-4 py-3">Save captures and settings locally</td></tr>
-            <tr><td class="px-4 py-3 font-mono text-xs">unlimitedStorage</td><td class="px-4 py-3">Allow larger local storage for images</td></tr>
-            <tr><td class="px-4 py-3 font-mono text-xs">contextMenus</td><td class="px-4 py-3">Add right-click capture options</td></tr>
-            <tr><td class="px-4 py-3 font-mono text-xs">scripting</td><td class="px-4 py-3">Inject capture tools into pages</td></tr>
-            <tr><td class="px-4 py-3 font-mono text-xs">alarms</td><td class="px-4 py-3">Schedule automatic old data cleanup</td></tr>
-            <tr><td class="px-4 py-3 font-mono text-xs">notifications</td><td class="px-4 py-3">Show capture completion alerts</td></tr>
-            <tr><td class="px-4 py-3 font-mono text-xs">clipboardWrite</td><td class="px-4 py-3">Copy extracted text to clipboard</td></tr>
-            <tr><td class="px-4 py-3 font-mono text-xs">&lt;all_urls&gt;</td><td class="px-4 py-3">Capture content from any webpage</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h2 class="text-xl font-bold mt-8 mb-3">5. Third-Party Services</h2>
-      <p class="text-gray-600 dark:text-gray-400 mb-6">TextHaul does not integrate with any third-party analytics, advertising, or tracking services. The extension does not make network requests to external APIs. The only external resources are:</p>
-      <ul class="list-disc pl-5 space-y-2 text-gray-600 dark:text-gray-400 mb-6">
-        <li>The Chrome Web Store (for installation and updates)</li>
-        <li>GitHub (if you choose to view the source code repository)</li>
-      </ul>
-
-      <h2 class="text-xl font-bold mt-8 mb-3">6. Intellectual Property</h2>
-      <p class="text-gray-600 dark:text-gray-400 mb-6">TextHaul is proprietary software. The source code, design, and functionality are the exclusive property of the author. All rights are reserved. Unauthorized copying, modification, distribution, or republication of the software or any portion thereof is strictly prohibited.</p>
-
-      <h2 class="text-xl font-bold mt-8 mb-3">7. Changes to This Policy</h2>
-      <p class="text-gray-600 dark:text-gray-400 mb-6">We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date. Since TextHaul does not collect contact information, we cannot notify users directly of policy changes.</p>
-
-      <h2 class="text-xl font-bold mt-8 mb-3">8. Contact</h2>
-      <p class="text-gray-600 dark:text-gray-400 mb-6">If you have questions or concerns about this Privacy Policy, please open an issue on our GitHub repository or contact us through the Chrome Web Store support channel.</p>
+    <h2>4. Permissions</h2>
+    <p>TextHaul requests only the Chrome permissions needed for its visible features. The production extension requests no persistent host permissions.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Permission</th><th>Purpose</th></tr></thead>
+        <tbody>
+          <tr><td><code>activeTab</code></td><td>Temporary access to the current tab after an explicit user action</td></tr>
+          <tr><td><code>storage</code></td><td>Save extension settings locally</td></tr>
+          <tr><td><code>unlimitedStorage</code></td><td>Support local screenshot-heavy capture libraries</td></tr>
+          <tr><td><code>contextMenus</code></td><td>Add the right-click capture entry point</td></tr>
+          <tr><td><code>scripting</code></td><td>Inject capture tools on demand after the user starts a capture</td></tr>
+          <tr><td><code>alarms</code></td><td>Schedule retention cleanup</td></tr>
+          <tr><td><code>notifications</code></td><td>Show optional capture-completion feedback</td></tr>
+          <tr><td><code>clipboardWrite</code></td><td>Support user-controlled copy actions</td></tr>
+        </tbody>
+      </table>
     </div>
+
+    <h2>5. Limited Use disclosure</h2>
+    <p>TextHaul&rsquo;s handling of user data follows the Chrome Web Store User Data Policy, including the Limited Use requirements. TextHaul uses user data only to provide its single purpose: capture visible webpage content at the user&rsquo;s request, run local OCR, and let the user review, organize, and export the result.</p>
+
+    <h2>6. Data retention and deletion</h2>
+    <p>You control local retention from the extension settings. You can delete individual captures, clear all captures, or uninstall TextHaul to remove locally stored extension data from the browser.</p>
+
+    <h2>7. Changes to this policy</h2>
+    <p>If this policy changes, the updated version will be posted on this page with a new revision date.</p>
+
+    <h2>8. Contact</h2>
+    <p>For privacy questions, use the support contact listed on the Chrome Web Store page once the listing is live.</p>
   </main>
 
-  <!-- Footer -->
-  <footer class="py-8 bg-gray-50 dark:bg-gray-900/50 border-t border-gray-200 dark:border-gray-800">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-      <p class="text-sm text-gray-500 dark:text-gray-500">&copy; <span id="year"></span> TextHaul</p>
-      <a href="index.html" class="text-sm text-primary-600 hover:text-primary-700 dark:hover:text-primary-400 transition">Back to home</a>
+  <footer class="footer">
+    <div class="shell footer-grid">
+      <div>&copy; <span data-year></span> <span translate="no">TextHaul</span>. All rights reserved.</div>
+      <div class="footer-links"><a href="index.html">Back to home</a></div>
     </div>
   </footer>
-
-  <script>
-    // Theme toggle
-    const themeToggle = document.getElementById('theme-toggle');
-    const sunIcon = document.getElementById('sun-icon');
-    const moonIcon = document.getElementById('moon-icon');
-    const html = document.documentElement;
-
-    function getTheme() {
-      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        return 'dark';
-      }
-      return 'light';
-    }
-
-    function applyTheme(theme) {
-      if (theme === 'dark') {
-        html.classList.add('dark');
-        sunIcon.classList.remove('hidden');
-        moonIcon.classList.add('hidden');
-      } else {
-        html.classList.remove('dark');
-        sunIcon.classList.add('hidden');
-        moonIcon.classList.remove('hidden');
-      }
-    }
-
-    applyTheme(getTheme());
-
-    themeToggle.addEventListener('click', () => {
-      const current = getTheme();
-      const next = current === 'dark' ? 'light' : 'dark';
-      localStorage.theme = next;
-      applyTheme(next);
-    });
-
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script src="site.js"></script>
 </body>
 </html>
